@@ -7,13 +7,13 @@ export default function Home() {
   ];
 
   return (
-    <main className="p-4">
+    <div>
       <h1 className="text-2xl font-bold mb-6">Ludo Tournaments</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {tournaments.map(tournament => (
           <TournamentCard key={tournament.id} tournament={tournament} />
         ))}
       </div>
-    </main>
+    </div>
   );
 }
