@@ -1,10 +1,8 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
-  output: 'standalone', // For Vercel serverless functions
+  output: 'standalone',
   images: {
-    domains: ['i.imgur.com'], // Add your image domains
-  },
-  experimental: {
-    serverActions: true, // Enable if using Next.js 13+
+    domains: ['i.imgur.com'],
   }
-  }
+  // Removed deprecated serverActions config
+}
